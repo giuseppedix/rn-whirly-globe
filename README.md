@@ -1,13 +1,13 @@
 
-# react-native-whirly-globe
+# rn-whirly-globe
 
 ## Getting started
 
-`$ npm install react-native-whirly-globe --save`
+`$ npm install rn-whirly-globe --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-whirly-globe`
+`$ react-native link rn-whirly-globe`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-whirly-globe` and add `RNWhirlyGlobe.xcodeproj`
+2. Go to `node_modules` ➜ `rn-whirly-globe` and add `RNWhirlyGlobe.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNWhirlyGlobe.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,18 +26,18 @@
   - Add `new RNWhirlyGlobePackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-whirly-globe'
-  	project(':react-native-whirly-globe').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-whirly-globe/android')
+  	include ':rn-whirly-globe'
+  	project(':rn-whirly-globe').projectDir = new File(rootProject.projectDir, 	'../node_modules/rn-whirly-globe/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-whirly-globe')
+      compile project(':rn-whirly-globe')
   	```
 
 
 ## Usage
 ```javascript
-import RNWhirlyGlobe from 'react-native-whirly-globe';
+import RNWhirlyGlobe from 'rn-whirly-globe';
 
 // TODO: What to do with the module?
 RNWhirlyGlobe;
