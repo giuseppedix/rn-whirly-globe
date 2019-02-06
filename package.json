@@ -1,0 +1,39 @@
+
+{
+  "name": "rn-whirly-globe",
+  "title": "React Native Binding Whirly Globe",
+  "version": "0.0.1",
+  "description": "Only for RN >= 0.58.3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itrabbit/rn-whirly-globe.git",
+    "baseUrl": "https://github.com/itrabbit/rn-whirly-globe"
+  },
+  "keywords": [
+    "react-native",
+    "whirly-globe",
+    "Whirly Globe",
+    "Globe",
+    "map",
+    "geo"
+  ],
+  "author": {
+    "name": "Alexander Garin",
+    "email": "garin1221@yandex.ru"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "16.6.3",
+    "react-native": "^0.58.3"
+  },
+  "devDependencies": {
+    "react": "16.6.3",
+    "react-native": "^0.58.3"
+  }
+}

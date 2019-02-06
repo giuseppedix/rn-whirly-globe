@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+include ':rn-whirly-globe'
+project(':rn-whirly-globe').projectDir = new File(rootProject.projectDir, '../node_modules/rn-whirly-globe/android')
+
+include ':app'
