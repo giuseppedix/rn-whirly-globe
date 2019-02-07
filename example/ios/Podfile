@@ -15,6 +15,12 @@ target 'example' do
     'RCTImage',
   ]
 
+  pod 'WhirlyGlobe', :http => 'https://s3-us-west-1.amazonaws.com/whirlyglobemaplydistribution/WhirlyGlobe-Maply_Distribution_2_5.zip'
+
+  pod 'WhirlyGlobeResources'
+
+  pod 'RNWhirlyGlobe', :path => '../node_modules/rn-whirly-globe'
+
 end
 
 post_install do |installer|

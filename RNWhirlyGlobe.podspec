@@ -9,18 +9,18 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNWhirlyGlobe
                    DESC
-  s.homepage     = "https://github.com/author/RNWhirlyGlobe"
+  s.homepage     = "https://github.com/itrabbit/rn-whirly-globe"
   s.license      = "MIT"
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author       = { "author" => "author@domain.cn" }
+  s.author       = { "author" => "garin1221@yandex.ru" }
   s.platform     = :ios, "10.3"
-  s.source       = { :git => "https://github.com/author/RNWhirlyGlobe.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/itrabbit/rn-whirly-globe.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m}"
   s.requires_arc = true
 
   s.dependency "React"
-  s.dependency "WhirlyGlobe", :http => "https://s3-us-west-1.amazonaws.com/whirlyglobemaplydistribution/WhirlyGlobe-Maply_Distribution_2_5.zip"
+  s.dependency "WhirlyGlobe"
   s.dependency "WhirlyGlobeResources"
 end
 

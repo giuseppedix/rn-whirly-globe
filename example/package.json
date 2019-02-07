@@ -3,7 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "react-native start",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "android-adb-reverse": "adb reverse tcp:8081 tcp:8081",
+    "build-ios-release": "react-native run-ios --configuration Release",
+    "build-android-release": "npm run patching && cd android && ./gradlew assembleRelease",
+    "build-android-release-java-1.8": "export JAVA_HOME=`/usr/libexec/java_home -v 1.8` && cd android && ./gradlew assembleRelease",
+    "prebuild-ios": "react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/main.jsbundle --assets-dest ios/",
+    "prebuild-android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
     "test": "jest"
   },
   "dependencies": {

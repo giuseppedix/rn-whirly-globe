@@ -5,13 +5,13 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* exampleTests.m */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -20,26 +20,11 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
-		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
-		2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */; };
-		2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */; };
-		2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */; };
-		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
-		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
-		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* exampleTests.m */; };
-		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		92E65B2DC58F6BE9F5DD8F4B /* libPods-example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA6D14FA8C07740A1553FC2 /* libPods-example.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
-		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
-		A5CFF993719D4DCBBA00EFBB /* libRNWhirlyGlobe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415252292A3242AAAC80918F /* libRNWhirlyGlobe.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,13 +63,6 @@
 			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
 			remoteInfo = RCTVibration;
 		};
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = example;
-		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
@@ -105,13 +83,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
-		};
-		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "example-tvOS";
 		};
 		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -175,20 +146,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
-		};
-		2DF0FFEA2056DD460020B375 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
-			remoteInfo = privatedata;
-		};
-		2DF0FFEC2056DD460020B375 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
-			remoteInfo = "privatedata-tvOS";
 		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -267,20 +224,6 @@
 			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
 			remoteInfo = "cxxreact-tvOS";
 		};
-		3DAD3EAC1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
-			remoteInfo = jschelpers;
-		};
-		3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
-			remoteInfo = "jschelpers-tvOS";
-		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -316,6 +259,34 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		D624023F220B11B400877874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDEBC6D6214B3E7000DD5AC8;
+			remoteInfo = jsi;
+		};
+		D6240241220B11B400877874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDEBC73B214B45A300DD5AC8;
+			remoteInfo = jsiexecutor;
+		};
+		D6240243220B11B400877874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED296FB6214C9A0900B7C4FE;
+			remoteInfo = "jsi-tvOS";
+		};
+		D6240245220B11B400877874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
+			remoteInfo = "jsiexecutor-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -325,7 +296,6 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exampleTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
@@ -338,28 +308,19 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = example/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = example/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* example-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* example-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "example-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D713B9587DF0A152E9C841 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7CA6D14FA8C07740A1553FC2 /* libPods-example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		CF73BC0F9FED16F106A343CE /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		4E040A1FE81E4EC18D0C9525 /* RNWhirlyGlobe.xcodeproj */ = {isa = PBXFileReference; name = "RNWhirlyGlobe.xcodeproj"; path = "../node_modules/react-native-whirly-globe/ios/RNWhirlyGlobe.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		415252292A3242AAAC80918F /* libRNWhirlyGlobe.a */ = {isa = PBXFileReference; name = "libRNWhirlyGlobe.a"; path = "libRNWhirlyGlobe.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,31 +338,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				A5CFF993719D4DCBBA00EFBB /* libRNWhirlyGlobe.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */,
-				2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */,
-				2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */,
-				2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */,
-				2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */,
-				2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */,
-				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
-				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
-				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
+				92E65B2DC58F6BE9F5DD8F4B /* libPods-example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,16 +447,16 @@
 				3DAD3EA71DF850E9000B6D8A /* libyoga.a */,
 				3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
-				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
-				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
 				2DF0FFDF2056DD460020B375 /* libjsinspector.a */,
 				2DF0FFE12056DD460020B375 /* libjsinspector-tvOS.a */,
 				2DF0FFE32056DD460020B375 /* libthird-party.a */,
 				2DF0FFE52056DD460020B375 /* libthird-party.a */,
 				2DF0FFE72056DD460020B375 /* libdouble-conversion.a */,
 				2DF0FFE92056DD460020B375 /* libdouble-conversion.a */,
-				2DF0FFEB2056DD460020B375 /* libprivatedata.a */,
-				2DF0FFED2056DD460020B375 /* libprivatedata-tvOS.a */,
+				D6240240220B11B400877874 /* libjsi.a */,
+				D6240242220B11B400877874 /* libjsiexecutor.a */,
+				D6240244220B11B400877874 /* libjsi-tvOS.a */,
+				D6240246220B11B400877874 /* libjsiexecutor-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -530,6 +467,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				7CA6D14FA8C07740A1553FC2 /* libPods-example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -567,7 +505,6 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				4E040A1FE81E4EC18D0C9525 /* RNWhirlyGlobe.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -589,6 +526,8 @@
 				00E356EF1AD99517003FC87E /* exampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				A4B61DD6308CF1F64A2F5045 /* Pods */,
+				D6240219220B11B400877874 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -599,11 +538,17 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* example.app */,
-				00E356EE1AD99517003FC87E /* exampleTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* example-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* example-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A4B61DD6308CF1F64A2F5045 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF73BC0F9FED16F106A343CE /* Pods-example.debug.xcconfig */,
+				39D713B9587DF0A152E9C841 /* Pods-example.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -615,35 +560,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D6240219220B11B400877874 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* exampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "exampleTests" */;
-			buildPhases = (
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
-			);
-			name = exampleTests;
-			productName = exampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* exampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		13B07F861A680F5B00A75B9A /* example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "example" */;
 			buildPhases = (
+				6218A3A54A34EBEEDEB43ED5 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				CE398ADF29D1CADDF9056E3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -654,42 +590,6 @@
 			productReference = 13B07F961A680F5B00A75B9A /* example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* example-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "example-tvOS" */;
-			buildPhases = (
-				2D02E4771E0B4A5D006451C7 /* Sources */,
-				2D02E4781E0B4A5D006451C7 /* Frameworks */,
-				2D02E4791E0B4A5D006451C7 /* Resources */,
-				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "example-tvOS";
-			productName = "example-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* example-tvOS.app */;
-			productType = "com.apple.product-type.application";
-		};
-		2D02E48F1E0B4A5D006451C7 /* example-tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "example-tvOSTests" */;
-			buildPhases = (
-				2D02E48C1E0B4A5D006451C7 /* Sources */,
-				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
-				2D02E48E1E0B4A5D006451C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
-			);
-			name = "example-tvOSTests";
-			productName = "example-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* example-tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -697,20 +597,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 940;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = ITRabbit;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
-					2D02E47A1E0B4A5D006451C7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-					};
-					2D02E48F1E0B4A5D006451C7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 2C2B3GWCW4;
 					};
 				};
 			};
@@ -778,9 +668,6 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* example */,
-				00E356ED1AD99517003FC87E /* exampleTests */,
-				2D02E47A1E0B4A5D006451C7 /* example-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* example-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -905,20 +792,6 @@
 			remoteRef = 2DF0FFE82056DD460020B375 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2DF0FFEB2056DD460020B375 /* libprivatedata.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libprivatedata.a;
-			remoteRef = 2DF0FFEA2056DD460020B375 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2DF0FFED2056DD460020B375 /* libprivatedata-tvOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libprivatedata-tvOS.a";
-			remoteRef = 2DF0FFEC2056DD460020B375 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -996,20 +869,6 @@
 			remoteRef = 3DAD3EAA1DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libjschelpers.a;
-			remoteRef = 3DAD3EAC1DF850E9000B6D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libjschelpers.a;
-			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1045,37 +904,43 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		D6240240220B11B400877874 /* libjsi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsi.a;
+			remoteRef = D624023F220B11B400877874 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D6240242220B11B400877874 /* libjsiexecutor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsiexecutor.a;
+			remoteRef = D6240241220B11B400877874 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D6240244220B11B400877874 /* libjsi-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsi-tvOS.a";
+			remoteRef = D6240243220B11B400877874 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D6240246220B11B400877874 /* libjsiexecutor-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsiexecutor-tvOS.a";
+			remoteRef = D6240245220B11B400877874 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E4791E0B4A5D006451C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1096,31 +961,825 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+		6218A3A54A34EBEEDEB43ED5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Bundle React Native Code And Images";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE398ADF29D1CADDF9056E3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-example/Pods-example-resources.sh",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/geography-class_medres.mbtiles",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_0x0.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_0x1.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_1x0.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_1x1.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_2x0.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_2x1.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_3x0.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_3x1.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_4x0.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_4x1.pvrtc",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb/lowres_wtb_info.plist",
+				"${PODS_ROOT}/WhirlyGlobeResources/elevation/world_web_mercator.sqlite",
+				"${PODS_ROOT}/WhirlyGlobeResources/LICENSE",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/airfield-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/airport-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/alcohol-shop-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/america-football-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/art-gallery-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/bakery-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/bank-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/bar-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/baseball-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/basketball-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/beer-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/bicycle-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/building-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/bus-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/cafe-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/camera-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/campsite-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/car-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/cemetery-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/cinema-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/circle-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/circle-stroked-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/city-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/clothing-store-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/college-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/commercial-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/cricket-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/cross-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/dam-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/danger-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/disability-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/dog-park-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/embassy-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/emergency-telephone-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/farm-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/fast-food-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/ferry-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/fire-station-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/fuel-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/garden-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/golf-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/grocery-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/harbor-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/heliport-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/hospital-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/industrial-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/land-use-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/laundry-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/library-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/lighthouse-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/lodging-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/logging-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/london-underground-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/marker-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/marker-stroked-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/minefield-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/monument-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/museum-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/music-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/oil-well-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/park-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/park2-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/parking-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/parking-garage-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/pharmacy-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/pitch-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/place-of-worship-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/playground-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/police-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/polling-place-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/post-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/prison-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/rail-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/rail-above-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/rail-underground-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/religious-christian-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/religious-jewish-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/religious-muslim-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/restaurant-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/roadblock-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/rocket-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/school-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/shop-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/skiing-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/slaughterhouse-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/soccer-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/square-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/square-stroked-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/star-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/star-stroked-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/suitcase-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/swimming-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/telephone-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/tennis-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/theatre-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/toilets-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/town-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/town-hall-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/triangle-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/triangle-stroked-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/village-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/warehouse-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/waste-basket-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/water-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/wetland-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons/zoo-24@2x.png",
+				"${PODS_ROOT}/WhirlyGlobeResources/mapbox vectors/osm-bright.xml",
+				"${PODS_ROOT}/WhirlyGlobeResources/mapzen vectors/MapzenStyles.json",
+				"${PODS_ROOT}/WhirlyGlobeResources/README.md",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ABW.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/AFG.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/AGO.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/AIA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ALA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ALB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/AND.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ARE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ARG.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ARM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ASM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ATA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ATF.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ATG.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/AUS.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/AUT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/AZE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BDI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BEL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BEN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BES.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BFA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BGD.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BGR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BHR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BHS.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BIH.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BLM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BLR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BLZ.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BMU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BOL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BRA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BRB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BRN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BTN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BVT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/BWA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CAF.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CAN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CCK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CHE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CHL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CHN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CIV.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CMR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/COD.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/COG.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/COK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/COL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/COM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CPV.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CRI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CUB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CUW.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CXR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CYM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CYP.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/CZE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/DEU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/DJI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/DMA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/DNK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/DOM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/DZA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ECU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/EGY.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ERI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ESH.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ESP.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/EST.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ETH.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/FIN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/FJI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/FLK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/FRA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/FRO.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/FSM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GAB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GBR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GEO.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GGY.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GHA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GIB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GIN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GLP.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GMB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GNB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GNQ.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GRC.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GRD.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GRL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GTM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GUF.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GUM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/GUY.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/HKG.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/HMD.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/HND.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/HRV.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/HTI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/HUN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/IDN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/IMN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/IND.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/IOT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/IRL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/IRN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/IRQ.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ISL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ISR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ITA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/JAM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/JEY.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/JOR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/JPN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/KAZ.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/KEN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/KGZ.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/KHM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/KIR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/KNA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/KOR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/KWT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LAO.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LBN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LBR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LBY.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LCA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LIE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LKA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LSO.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LTU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LUX.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/LVA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MAC.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MAF.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MAR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MCO.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MDA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MDG.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MDV.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MEX.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MHL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MKD.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MLI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MLT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MMR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MNE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MNG.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MNP.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MOZ.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MRT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MSR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MTQ.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MUS.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MWI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MYS.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/MYT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NAM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NCL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NER.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NFK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NGA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NIC.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NIU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NLD.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NOR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NPL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NRU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/NZL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/OMN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PAK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PAN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PCN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PER.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PHL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PLW.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PNG.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/POL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PRI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PRK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PRT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PRY.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PSE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/PYF.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/QAT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/REU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ROU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/RUS.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/RWA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SAU.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SDN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SEN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SGP.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SGS.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SHN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SJM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SLB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SLE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SLV.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SMR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SOM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SPM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SRB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SSD.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/STP.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SUR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SVK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SVN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SWE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SWZ.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SXM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SYC.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/SYR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TCA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TCD.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TGO.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/THA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TJK.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TKL.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TKM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TLS.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TON.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TTO.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TUN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TUR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TUV.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TWN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/TZA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/UGA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/UKR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/UMI.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/URY.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/USA.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/UZB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/VAT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/VCT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/VEN.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/VGB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/VIR.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/VNM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/VUT.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/WLF.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/WSM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/YEM.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ZAF.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ZMB.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m/ZWE.geojson",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/sf_roads/tl_2013_06075_roads.dbf",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/sf_roads/tl_2013_06075_roads.mbr",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/sf_roads/tl_2013_06075_roads.prj",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/sf_roads/tl_2013_06075_roads.shp",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/sf_roads/tl_2013_06075_roads.shx",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/sf_roads/tl_2013_06075_roads.sqlite",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps",
+				"${PODS_ROOT}/WhirlyGlobeResources/base_maps/lowres_wtb",
+				"${PODS_ROOT}/WhirlyGlobeResources/elevation",
+				"${PODS_ROOT}/WhirlyGlobeResources/maki icons",
+				"${PODS_ROOT}/WhirlyGlobeResources/mapbox vectors",
+				"${PODS_ROOT}/WhirlyGlobeResources/mapzen vectors",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/country_json_50m",
+				"${PODS_ROOT}/WhirlyGlobeResources/vectors/sf_roads",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/geography-class_medres.mbtiles",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_0x0.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_0x1.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_1x0.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_1x1.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_2x0.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_2x1.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_3x0.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_3x1.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_4x0.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_4x1.pvrtc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb_info.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/world_web_mercator.sqlite",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/airfield-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/airport-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/alcohol-shop-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/america-football-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/art-gallery-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bakery-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bank-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bar-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baseball-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/basketball-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beer-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bicycle-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/building-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bus-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cafe-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/camera-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/campsite-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/car-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cemetery-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cinema-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/circle-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/circle-stroked-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/city-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/clothing-store-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/college-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/commercial-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cricket-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cross-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/dam-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/danger-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/disability-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/dog-park-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/embassy-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/emergency-telephone-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/farm-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fast-food-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ferry-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fire-station-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fuel-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/garden-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/golf-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/grocery-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/harbor-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/heliport-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/hospital-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/industrial-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/land-use-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/laundry-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/library-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lighthouse-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lodging-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/logging-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/london-underground-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/marker-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/marker-stroked-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/minefield-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/monument-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/museum-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/music-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/oil-well-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/park-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/park2-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/parking-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/parking-garage-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pharmacy-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pitch-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/place-of-worship-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/playground-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/police-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/polling-place-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/post-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/prison-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/rail-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/rail-above-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/rail-underground-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/religious-christian-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/religious-jewish-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/religious-muslim-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/restaurant-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/roadblock-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/rocket-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/school-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/shop-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/skiing-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/slaughterhouse-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/soccer-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/square-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/square-stroked-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/star-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/star-stroked-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/suitcase-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/swimming-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/telephone-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tennis-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/theatre-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/toilets-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/town-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/town-hall-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/triangle-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/triangle-stroked-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/village-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/warehouse-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/waste-basket-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/water-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wetland-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zoo-24@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/osm-bright.xml",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MapzenStyles.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/README.md",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ABW.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AFG.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AGO.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AIA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ALA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ALB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AND.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARG.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ARM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ASM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ATA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ATF.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ATG.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AUS.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AUT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AZE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BDI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BEL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BEN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BES.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BFA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BGD.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BGR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BHR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BHS.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BIH.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BLM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BLR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BLZ.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BMU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BOL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BTN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BVT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BWA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CAF.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CAN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CCK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CHE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CHL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CHN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CIV.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CMR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/COD.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/COG.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/COK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/COL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/COM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CPV.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CRI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CUB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CUW.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CXR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CYM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CYP.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CZE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DEU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DJI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DMA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DNK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DOM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DZA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ECU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EGY.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ERI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ESH.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ESP.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EST.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ETH.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FIN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FJI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FLK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FRA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FRO.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FSM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GAB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GBR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GEO.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GGY.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GHA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GIB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GIN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GLP.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GMB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GNB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GNQ.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GRC.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GRD.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GRL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GUF.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GUM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GUY.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HKG.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HMD.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HND.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HRV.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HTI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HUN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IMN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IND.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IOT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IRL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IRN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IRQ.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ISL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ISR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ITA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JAM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JEY.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JOR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JPN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KAZ.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KEN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KGZ.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KHM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KIR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KNA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KOR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KWT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LAO.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LBN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LBR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LBY.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LCA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LIE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LKA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LSO.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LTU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LUX.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LVA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MAC.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MAF.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MAR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MCO.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MDA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MDG.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MDV.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MEX.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MHL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MKD.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MLI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MLT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MMR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MNE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MNG.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MNP.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MOZ.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MSR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MTQ.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MUS.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MWI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MYS.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MYT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NAM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NCL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NER.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NFK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NGA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NIC.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NIU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NLD.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NOR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NPL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NRU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NZL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OMN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PAK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PAN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PCN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PER.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PHL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PLW.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PNG.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/POL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PRI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PRK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PRT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PRY.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PSE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PYF.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QAT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/REU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ROU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RUS.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RWA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAU.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SEN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGP.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGS.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SHN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SJM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SLB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SLE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SLV.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SMR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SOM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SPM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SRB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SSD.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/STP.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SUR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SWE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SWZ.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SXM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SYC.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SYR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TCA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TCD.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TGO.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/THA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TJK.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TKL.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TKM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TLS.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TON.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TTO.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUV.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TWN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UGA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UKR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMI.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/URY.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/USA.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UZB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VAT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VCT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VEN.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VGB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VIR.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VNM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VUT.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WLF.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WSM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YEM.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZAF.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZMB.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZWE.geojson",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tl_2013_06075_roads.dbf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tl_2013_06075_roads.mbr",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tl_2013_06075_roads.prj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tl_2013_06075_roads.shp",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tl_2013_06075_roads.shx",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tl_2013_06075_roads.sqlite",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/base_maps",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lowres_wtb",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/elevation",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/maki icons",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapbox vectors",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapzen vectors",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/vectors",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/country_json_50m",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sf_roads",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-example/Pods-example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E356F31AD99517003FC87E /* exampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1130,37 +1789,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D02E4771E0B4A5D006451C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
-				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DCD954D1E0B4F2C00145EB5 /* exampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* example */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* example-tvOS */;
-			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
@@ -1175,67 +1804,18 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = exampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
-				);
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = exampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
-				);
-			};
-			name = Release;
-		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF73BC0F9FED16F106A343CE /* Pods-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 2C2B3GWCW4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
+				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1243,21 +1823,23 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.itrabbit.rnwg.example;
 				PRODUCT_NAME = example;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
-				);
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D713B9587DF0A152E9C841 /* Pods-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2C2B3GWCW4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
+				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1265,147 +1847,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.itrabbit.rnwg.example;
 				PRODUCT_NAME = example;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
-				);
-			};
-			name = Release;
-		};
-		2D02E4971E0B4A5E006451C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "example-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.example-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
-				);
-			};
-			name = Debug;
-		};
-		2D02E4981E0B4A5E006451C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "example-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.example-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
-				);
-			};
-			name = Release;
-		};
-		2D02E4991E0B4A5E006451C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "example-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.example-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example-tvOS.app/example-tvOS";
-				TVOS_DEPLOYMENT_TARGET = 10.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
-				);
-			};
-			name = Debug;
-		};
-		2D02E49A1E0B4A5E006451C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "example-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.example-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example-tvOS.app/example-tvOS";
-				TVOS_DEPLOYMENT_TARGET = 10.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-whirly-globe/ios/**",
-				);
 			};
 			name = Release;
 		};
@@ -1455,7 +1899,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1501,7 +1945,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1511,38 +1955,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "exampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "example-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D02E4971E0B4A5E006451C7 /* Debug */,
-				2D02E4981E0B4A5E006451C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "example-tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D02E4991E0B4A5E006451C7 /* Debug */,
-				2D02E49A1E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
