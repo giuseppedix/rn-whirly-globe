@@ -1,5 +1,5 @@
 
-#import "RNWhirlyGlobeMapManager.h"
+#import "RNWhirlyGlobeMapViewManager.h"
 #import "RNWhirlyGlobeMapView.h"
 
 #if __has_include(<React/RCTBridge.h>)
@@ -16,13 +16,11 @@
 
 #import <Foundation/Foundation.h>
 
-@implementation RNWhirlyGlobeMapManager
+@implementation RNWhirlyGlobeMapViewManager
 
 RCT_EXPORT_MODULE()
 
 RCT_EXPORT_VIEW_PROPERTY(globeMap, BOOL)
-
-RCT_EXPORT_VIEW_PROPERTY(locationTracking, BOOL)
 
 - (UIView *)view
 {

@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "react": "16.6.3",
-    "react-native": "^0.58.3",
-    "rn-whirly-globe": "file:../"
+    "react-native": "^0.58.4",
+    "rn-whirly-globe": "file:.."
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

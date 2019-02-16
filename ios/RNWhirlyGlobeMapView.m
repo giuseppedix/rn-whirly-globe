@@ -2,8 +2,7 @@
 #import "RNWhirlyGlobeMapView.h"
 
 #import "UIColor+HexString.h"
-#import "../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h"
-#import "../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/objc/NSObject.h"
+#import "UIView+FindUIViewController.h"
 
 #import <WhirlyGlobeMaplyComponent/WhirlyGlobeComponent.h>
 #import <WhirlyGlobeMaplyComponent/MaplyComponent.h>
@@ -122,17 +121,17 @@
             }
             // Add tmp objects on bkg thread
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
-                for (NSString *uuid in _objects) {
-                    if (!_mapViewController) {
+                for (NSString *uuid in self->_objects) {
+                    if (!self->_mapViewController) {
                         return;
                     }
-                    NSDictionary *desc = _objectDescs[uuid] ? _objectDescs[uuid] : nil;
-                    if ([_objects[uuid] isKindOfClass:[MaplyScreenMarker class]]) {
-                        [_mapViewController addScreenMarkers:@[_objects[uuid]] desc:desc];
-                    } else if ([_objects[uuid] isKindOfClass:[MaplyScreenLabel class]]) {
-                        [_mapViewController addScreenLabels:@[_objects[uuid]] desc:desc];
-                    } else if ([_objects[uuid] isKindOfClass:[MaplyVectorObject class]]) {
-                        [_mapViewController addVectors:@[_objects[uuid]] desc:desc];
+                    NSDictionary *desc = self->_objectDescs[uuid] ? self->_objectDescs[uuid] : nil;
+                    if ([self->_objects[uuid] isKindOfClass:[MaplyScreenMarker class]]) {
+                        [self->_mapViewController addScreenMarkers:@[self->_objects[uuid]] desc:desc];
+                    } else if ([self->_objects[uuid] isKindOfClass:[MaplyScreenLabel class]]) {
+                        [self->_mapViewController addScreenLabels:@[self->_objects[uuid]] desc:desc];
+                    } else if ([self->_objects[uuid] isKindOfClass:[MaplyVectorObject class]]) {
+                        [self->_mapViewController addVectors:@[self->_objects[uuid]] desc:desc];
                     }
                 }
             });
@@ -141,7 +140,7 @@
         }
     }
     if (_mapViewController != nil) {
-        _mapViewController.view.frame = self.bounds;
+        _mapViewController.view.frame = self.frame;
     }
 }
 
@@ -168,21 +167,8 @@
     [self removeInternalMapViewController];
 }
 
-- (UIViewController *)firstAvailableUIViewController
-{
+- (UIViewController *)firstAvailableUIViewController {
     return (UIViewController *) [self traverseResponderChainForUIViewController];
-}
-
-- (id)traverseResponderChainForUIViewController
-{
-    id nextResponder = [self nextResponder];
-    if ([nextResponder isKindOfClass:[UIViewController class]]) {
-        return nextResponder;
-    } else if ([nextResponder isKindOfClass:[UIView class]]) {
-        return [nextResponder traverseResponderChainForUIViewController];
-    } else {
-        return nil;
-    }
 }
 
 #pragma mark location tracking
@@ -228,7 +214,7 @@
 
 - (NSString *)createScreenMarker:(NSDictionary *)config
 {
-    if (!_mapViewController || !config) {
+    if (!config) {
         return nil;
     }
     NSString *uuid = [[NSUUID UUID] UUIDString];
@@ -267,14 +253,16 @@
     if (config[@"image"]) {
         marker.image = [RCTConvert UIImage:config[@"image"]];
     }
-    [_mapViewController addScreenMarkers:@[marker] desc:nil];
+    if (_mapViewController) {
+        [_mapViewController addScreenMarkers:@[marker] desc:nil];
+    }
     _objects[uuid] = marker;
     return uuid;
 }
 
 - (NSString *)createScreenLabel:(NSDictionary *)config
 {
-    if (!_mapViewController || !config) {
+    if (!config) {
         return nil;
     }
     NSString *uuid = [[NSUUID UUID] UUIDString];
@@ -308,7 +296,9 @@
         kMaplyColor: config[@"color"]
             && [config[@"color"] isKindOfClass:[NSString class]] ? [UIColor colorWithHexString:config[@"color"]] : [UIColor whiteColor]
     };
-    [_mapViewController addScreenLabels:@[label] desc: desc];
+    if (_mapViewController) {
+        [_mapViewController addScreenLabels:@[label] desc: desc];
+    }
     _objectDescs[uuid] = desc;
     _objects[uuid] = label;
     return uuid;
@@ -316,7 +306,7 @@
 
 - (NSString *)createVectorObject:(NSDictionary *)config
 {
-    if (!_mapViewController || !config) {
+    if (!config) {
         return nil;
     }
     if (!config[@"source"] || ![config[@"source"] isKindOfClass:[NSDictionary class]]) {
@@ -354,19 +344,21 @@
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
                                                 completionHandler:^(NSData *data, NSURLResponse *response,
                                                                     NSError *error) {
-                                                    [_dataTaskObjects removeObjectForKey:uuid];
+                                                    [self->_dataTaskObjects removeObjectForKey:uuid];
                                                     // TODO: Add error event to JS
                                                     if (error) {
                                                         NSLog(@"%@", error);
                                                     }
                                                     if (data) {
                                                         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
-                                                            if (!_mapViewController) {
+                                                            if (!self->_mapViewController) {
                                                                 return;
                                                             }
                                                             MaplyVectorObject *vectorObject = [MaplyVectorObject VectorObjectFromGeoJSON:data];
-                                                            [_mapViewController addVectors:@[vectorObject] desc:desc];
-                                                            _objects[uuid] = vectorObject;
+                                                            if(self->_mapViewController) {
+                                                                [self->_mapViewController addVectors:@[vectorObject] desc:desc];
+                                                            }
+                                                            self->_objects[uuid] = vectorObject;
                                                             // TODO: Add finish loading event (only main thread)
                                                         });
                                                     }
@@ -379,7 +371,7 @@
 
 - (NSString *)createTilesLayer:(NSDictionary *)config
 {
-    if (!_mapViewController || !config) {
+    if (!config) {
         return nil;
     }
     NSString * uuid = [[NSUUID UUID] UUIDString];
@@ -407,7 +399,9 @@
         layer.handleEdges = _useGlobeMap;
         layer.coverPoles = _useGlobeMap;
         _layers[uuid] = layer;
-        [_mapViewController addLayer:layer];
+        if(_mapViewController) {
+            [_mapViewController addLayer:layer];
+        }
         return uuid;
     }
     return nil;
@@ -422,7 +416,7 @@
     }
     [_objectDescs removeObjectForKey:uuid];
     [_dataTaskObjects removeObjectForKey:uuid];
-    if (_objects[uuid] && _mapViewController) {
+    if (_objects[uuid]) {
         if (_mapViewController) {
             [_mapViewController removeObject:_objects[uuid]];
         }
@@ -432,8 +426,10 @@
 
 - (void)removeTilesLayerByUUID:(NSString *)uuid
 {
-    if (_layers[uuid] && _mapViewController) {
-        [_mapViewController removeLayer:_layers[uuid]];
+    if (_layers[uuid]) {
+        if (_mapViewController) {
+            [_mapViewController removeLayer:_layers[uuid]];
+        }
         [_layers removeObjectForKey:uuid];
     }
 }

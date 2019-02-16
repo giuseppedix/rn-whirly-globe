@@ -44,4 +44,8 @@ local.properties
 buck-out/
 \.buckd/
 *.keystore
-      
+
+# Maps Data
+example/testMaxData/
+*.mbtiles
+*.geojson

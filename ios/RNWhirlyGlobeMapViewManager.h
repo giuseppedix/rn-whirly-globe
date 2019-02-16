@@ -5,5 +5,5 @@
 #import "RCTViewManager.h"
 #endif
 
-@interface RNWhirlyGlobeMapManager : RCTViewManager
+@interface RNWhirlyGlobeMapViewManager : RCTViewManager
 @end
