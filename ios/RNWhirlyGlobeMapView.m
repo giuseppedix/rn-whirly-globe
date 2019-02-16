@@ -4,8 +4,9 @@
 #import "UIColor+HexString.h"
 #import "UIView+FindUIViewController.h"
 
-#import <WhirlyGlobeMaplyComponent/WhirlyGlobeComponent.h>
-#import <WhirlyGlobeMaplyComponent/MaplyComponent.h>
+#import <WhirlyGlobeComponent.h>
+#import <MapboxVectorTiles.h>
+#import <MaplyComponent.h>
 
 #if __has_include(<React/RCTConvert.h>)
 #import <React/RCTConvert.h>
@@ -14,8 +15,9 @@
 #import "RCTConvert.h"
 #endif
 
-@implementation RNWhirlyGlobeMapView
-{
+#import "MapboxTilesWrapperLayer.h"
+
+@implementation RNWhirlyGlobeMapView {
     MaplyBaseViewController * _mapViewController;
     NSMutableDictionary * _dataTaskObjects;
     NSMutableDictionary * _objectDescs;
@@ -29,8 +31,7 @@
     BOOL _firstInit;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         [self preparation];
@@ -38,8 +39,7 @@
     return self;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         [self preparation];
@@ -47,8 +47,7 @@
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
+- (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
         [self preparation];
@@ -56,8 +55,7 @@
     return self;
 }
 
-- (void)preparation
-{
+- (void)preparation {
     _firstInit = FALSE;
     _useGlobeMap = FALSE;
     _trackingConfig = nil;
@@ -69,8 +67,7 @@
     _dataTaskObjects = [[NSMutableDictionary alloc] init];
 }
 
-- (void)setGlobeMap:(BOOL)value
-{
+- (void)setGlobeMap:(BOOL)value {
     if (_useGlobeMap != value || !_firstInit) {
         _firstInit = TRUE;
         _useGlobeMap = value;
@@ -80,8 +77,7 @@
 }
 #pragma clang diagnostic pop
 
-- (void)removeInternalMapViewController
-{
+- (void)removeInternalMapViewController {
     if (_mapViewController != nil) {
         [_mapViewController stopLocationTracking];
         [_mapViewController stopAnimation];
@@ -92,8 +88,7 @@
     _mapViewController = nil;
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     if (_isChangeWhirlyGlobeVC) {
         [self removeInternalMapViewController];
@@ -117,6 +112,8 @@
                         ((MaplyQuadImageTilesLayer *)_layers[uuid]).coverPoles = _useGlobeMap;
                     }
                     [_mapViewController addLayer:_layers[uuid]];
+                } else if([_layers[uuid] isKindOfClass:[MapboxTilesWrapperLayer class]]) {
+                    [_mapViewController addLayer:[((MapboxTilesWrapperLayer *)_layers[uuid]) generateLayerByVc:_mapViewController]];
                 }
             }
             // Add tmp objects on bkg thread
@@ -144,8 +141,7 @@
     }
 }
 
-- (void)clear
-{
+- (void)clear {
     if (_mapViewController) {
         [_mapViewController removeAllLayers];
         [_mapViewController removeObjects:[_objects allValues]];
@@ -158,11 +154,15 @@
     [_dataTaskObjects removeAllObjects];
     [_objectDescs removeAllObjects];
     [_objects removeAllObjects];
+    for (NSString * uuid in _layers) {
+        if ([_layers[uuid] isKindOfClass:[MapboxTilesWrapperLayer class]]) {
+            [((MapboxTilesWrapperLayer *)_layers[uuid]) destroy];
+        }
+    }
     [_layers removeAllObjects];
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     [self clear];
     [self removeInternalMapViewController];
 }
@@ -173,8 +173,7 @@
 
 #pragma mark location tracking
 
-- (void)initLocationTracking
-{
+- (void)initLocationTracking {
     [self stopLocationTracking];
     if (_trackingConfig && _mapViewController) {
         bool useHeading = _trackingConfig[@"useHeading"] ? [_trackingConfig[@"useHeading"] boolValue] : false;
@@ -184,14 +183,12 @@
     }
 }
 
-- (void)startLocationTracking:(NSDictionary *)config
-{
+- (void)startLocationTracking:(NSDictionary *)config {
     _trackingConfig = config;
     [self initLocationTracking];
 }
 
-- (void)stopLocationTracking
-{
+- (void)stopLocationTracking {
     if (_mapViewController) {
         [_mapViewController stopLocationTracking];
     }
@@ -212,8 +209,7 @@
 
 #pragma mark create objects methods
 
-- (NSString *)createScreenMarker:(NSDictionary *)config
-{
+- (NSString *)createScreenMarker:(NSDictionary *)config {
     if (!config) {
         return nil;
     }
@@ -260,8 +256,7 @@
     return uuid;
 }
 
-- (NSString *)createScreenLabel:(NSDictionary *)config
-{
+- (NSString *)createScreenLabel:(NSDictionary *)config {
     if (!config) {
         return nil;
     }
@@ -304,8 +299,7 @@
     return uuid;
 }
 
-- (NSString *)createVectorObject:(NSDictionary *)config
-{
+- (NSString *)createVectorObject:(NSDictionary *)config {
     if (!config) {
         return nil;
     }
@@ -369,16 +363,34 @@
     return uuid;
 }
 
-- (NSString *)createTilesLayer:(NSDictionary *)config
-{
+- (NSString *)createTilesLayer:(NSDictionary *)config {
     if (!config) {
         return nil;
     }
+    BOOL skipSaveOriginalLayer = FALSE;
+    MaplyViewControllerLayer * layer = nil;
     NSString * uuid = [[NSUUID UUID] UUIDString];
-    MaplyQuadImageTilesLayer * layer = nil;
     if (config[@"mb"] && [config[@"mb"] isKindOfClass:[NSString class]]) {
-        MaplyMBTileSource * tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:config[@"mb"]];
-        layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
+        if (config[@"useVectorMbTiles"] && [config[@"useVectorMbTiles"] isKindOfClass:[NSString class]]) {
+            if([config[@"useVectorMbTiles"] isEqualToString:@"mapbox"]) {
+                MaplyMBTileSource * tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:config[@"mb"]];
+                MapboxTilesWrapperLayer * wrapper = [[MapboxTilesWrapperLayer alloc] initWithMBTileSource: tileSource];
+                wrapper.singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
+                wrapper.flipY = false;
+                _layers[uuid] = wrapper;
+                skipSaveOriginalLayer = TRUE;
+                layer = [wrapper generateLayerByVc:_mapViewController];
+            } else if([config[@"useVectorMbTiles"] isEqualToString:@"maply"]) {
+                NSString * mapFile = [[NSBundle mainBundle] pathForResource:config[@"mb"] ofType:@"mbtiles"];
+                MaplyVectorTiles * vecTiles = [[MaplyVectorTiles alloc] initWithDatabase: mapFile viewC:_mapViewController];
+                layer = [[MaplyQuadPagingLayer alloc] initWithCoordSystem:[[MaplySphericalMercator alloc] initWebStandard] delegate:vecTiles];
+                ((MaplyQuadPagingLayer *)layer).numSimultaneousFetches = 8;
+            }
+        }
+        if (layer == nil) {
+            MaplyMBTileSource * tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:config[@"mb"]];
+            layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
+        }
     } else if (config[@"source"] && [config[@"source"] isKindOfClass:[NSDictionary class]]) {
         NSDictionary * source = config[@"source"];
         NSString * baseCacheDir = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
@@ -393,12 +405,18 @@
     }
     if (layer != nil) {
         layer.drawPriority = config[@"drawPriority"] && [config[@"drawPriority"] isKindOfClass:[NSNumber class]] ? [config[@"drawPriority"] intValue] : 0;
-        layer.singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
-        layer.requireElev = config[@"requireElev"] ? [config[@"requireElev"] boolValue] : false;
-        layer.waitLoad = config[@"waitLoad"] ? [config[@"waitLoad"] boolValue] : true;
-        layer.handleEdges = _useGlobeMap;
-        layer.coverPoles = _useGlobeMap;
-        _layers[uuid] = layer;
+        if ([layer isKindOfClass:[MaplyQuadImageTilesLayer class]]) {
+            ((MaplyQuadImageTilesLayer*)layer).singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
+            ((MaplyQuadImageTilesLayer*)layer).requireElev = config[@"requireElev"] ? [config[@"requireElev"] boolValue] : false;
+            ((MaplyQuadImageTilesLayer*)layer).waitLoad = config[@"waitLoad"] ? [config[@"waitLoad"] boolValue] : true;
+            ((MaplyQuadImageTilesLayer*)layer).handleEdges = _useGlobeMap;
+            ((MaplyQuadImageTilesLayer*)layer).coverPoles = _useGlobeMap;
+        } else if ([layer isKindOfClass:[MaplyQuadPagingLayer class]]) {
+            ((MaplyQuadPagingLayer*)layer).singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
+        }
+        if (!skipSaveOriginalLayer) {
+            _layers[uuid] = layer;
+        }
         if(_mapViewController) {
             [_mapViewController addLayer:layer];
         }
@@ -409,8 +427,7 @@
 
 #pragma mark remove objects methods
 
-- (void)removeMapObjectByUUID:(NSString *)uuid
-{
+- (void)removeMapObjectByUUID:(NSString *)uuid {
     if (_dataTaskObjects[uuid] && [_dataTaskObjects[uuid] isKindOfClass:[NSURLSessionDataTask class]]) {
         [_dataTaskObjects[uuid] cancel];
     }
@@ -424,9 +441,18 @@
     }
 }
 
-- (void)removeTilesLayerByUUID:(NSString *)uuid
-{
+- (void)removeTilesLayerByUUID:(NSString *)uuid {
     if (_layers[uuid]) {
+        // Check wrappers
+        if ([_layers[uuid] isKindOfClass:[MapboxTilesWrapperLayer class]]) {
+            MaplyQuadPagingLayer * layer = [((MapboxTilesWrapperLayer *)_layers[uuid]) getLatestLayer];
+            if (layer != nil) {
+                [_mapViewController removeLayer: layer];
+            }
+            [((MapboxTilesWrapperLayer *)_layers[uuid]) destroy];
+            return;
+        }
+        // Base layers
         if (_mapViewController) {
             [_mapViewController removeLayer:_layers[uuid]];
         }
@@ -436,8 +462,7 @@
 
 #pragma mark over public methods
 
-- (void)animateToPositionLon:(float)lon Lat:(float)lat ByTime:(double)time
-{
+- (void)animateToPositionLon:(float)lon Lat:(float)lat ByTime:(double)time {
     if (!_mapViewController) {
         return;
     }

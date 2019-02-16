@@ -34,7 +34,6 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
-build/
 .idea
 .gradle
 local.properties
@@ -45,7 +44,6 @@ buck-out/
 \.buckd/
 *.keystore
 
-# Maps Data
-example/testMaxData/
-*.mbtiles
-*.geojson
+# Maps data for example
+example/ios/Resources/*.mbtiles
+example/ios/Resources/*.geojson

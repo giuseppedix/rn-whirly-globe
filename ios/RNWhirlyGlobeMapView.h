@@ -12,7 +12,7 @@
 #import "RCTView.h"
 #endif
 
-#import <WhirlyGlobeMaplyComponent/MaplyLocationTracker.h>
+#import <MaplyLocationTracker.h>
 
 @interface RNWhirlyGlobeMapView : RCTView<MaplyLocationTrackerDelegate>
 
