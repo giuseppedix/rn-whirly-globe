@@ -15,8 +15,6 @@ target 'example' do
     'RCTImage',
   ]
 
-  pod 'WhirlyGlobeResources'
-
   pod 'RNWhirlyGlobe', :path => '../node_modules/rn-whirly-globe'
 
 end

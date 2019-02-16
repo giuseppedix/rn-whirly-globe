@@ -9,6 +9,7 @@ class TilesLayer extends React.PureComponent {
     static propTypes = {
         map: PropTypes.instanceOf(Map),
         mb: PropTypes.string,
+        useVectorMbTiles: PropTypes.oneOf(['none', 'mapbox', 'maply']),
         source: PropTypes.shape({
             uri: PropTypes.string.isRequired,
             cacheDir: PropTypes.string,
@@ -24,6 +25,7 @@ class TilesLayer extends React.PureComponent {
 
     static defaultProps = {
         drawPriority: 0,
+        useVectorMbTiles: 'none',
         singleLevelLoading: false,
         requireElev: false,
         waitLoad: true,
@@ -37,22 +39,23 @@ class TilesLayer extends React.PureComponent {
     }
 
     componentDidMount() {
-        if (!this.map) {
-            return console.warn('Cannot Map in TilesLayer!');
-        }
-
         const {
             mb,
+            map,
             source,
             drawPriority,
             singleLevelLoading,
+            useVectorMbTiles,
             requireElev,
             waitLoad,
         } = this.props;
-
-        this.map.addTilesLayer({
+        if (!map) {
+            return console.warn('[TilesLayer] Cannot map ref in props!');
+        }
+        map.addTilesLayer({
             ...(source ? {source} : {mb}),
             singleLevelLoading,
+            useVectorMbTiles,
             drawPriority,
             requireElev,
             waitLoad,
