@@ -6,6 +6,7 @@ import Map from '../Map';
 import { decorateMapComponent } from '../utils';
 
 class TilesLayer extends React.PureComponent {
+    // noinspection SpellCheckingInspection
     static propTypes = {
         map: PropTypes.instanceOf(Map),
         mb: PropTypes.string,

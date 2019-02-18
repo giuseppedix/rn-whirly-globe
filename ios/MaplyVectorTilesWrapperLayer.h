@@ -1,12 +1,11 @@
 #import <Foundation/Foundation.h>
 
-#import <MaplyMBTileSource.h>
 #import <MaplyQuadPagingLayer.h>
 #import <MaplyBaseViewController.h>
 
-@interface MapboxTilesWrapperLayer : NSObject
+@interface MaplyVectorTilesWrapperLayer : NSObject
 
-- (instancetype)initWithMBTileSource:(MaplyMBTileSource *__nonnull)source;
+- (instancetype)initWithMapFilePath:(NSString *__nonnull)path;
 
 - (MaplyQuadPagingLayer *)generateLayerByVc:(MaplyBaseViewController *)controller;
 
@@ -19,5 +18,7 @@
 @property (assign, nonatomic) int drawPriority;
 
 @property (assign, nonatomic) bool singleLevelLoading;
+
+@property (assign, nonatomic) int numSimultaneousFetches;
 
 @end

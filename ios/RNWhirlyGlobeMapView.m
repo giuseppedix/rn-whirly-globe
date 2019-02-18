@@ -16,6 +16,7 @@
 #endif
 
 #import "MapboxTilesWrapperLayer.h"
+#import "MaplyVectorTilesWrapperLayer.h"
 
 @implementation RNWhirlyGlobeMapView {
     MaplyBaseViewController * _mapViewController;
@@ -114,6 +115,8 @@
                     [_mapViewController addLayer:_layers[uuid]];
                 } else if([_layers[uuid] isKindOfClass:[MapboxTilesWrapperLayer class]]) {
                     [_mapViewController addLayer:[((MapboxTilesWrapperLayer *)_layers[uuid]) generateLayerByVc:_mapViewController]];
+                } else if([_layers[uuid] isKindOfClass:[MaplyVectorTilesWrapperLayer class]]) {
+                    [_mapViewController addLayer:[((MaplyVectorTilesWrapperLayer *)_layers[uuid]) generateLayerByVc:_mapViewController]];
                 }
             }
             // Add tmp objects on bkg thread
@@ -363,35 +366,81 @@
     return uuid;
 }
 
+- (void)setupTilesLayer:(id)layer FromConfig:(NSDictionary *)config {
+    if (!config) {
+        return;
+    }
+    if ([layer isKindOfClass:[MapboxTilesWrapperLayer class]]) {
+        MapboxTilesWrapperLayer * wrapper = (MapboxTilesWrapperLayer *)layer;
+        wrapper.singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
+        wrapper.drawPriority = config[@"drawPriority"] && [config[@"drawPriority"] isKindOfClass:[NSNumber class]] ? [config[@"drawPriority"] intValue] : 0;
+        wrapper.flipY = config[@"flipY"] ? [config[@"flipY"] boolValue] : false;
+        return;
+    }
+    if ([layer isKindOfClass:[MaplyVectorTilesWrapperLayer class]]) {
+        MaplyVectorTilesWrapperLayer * wrapper = (MaplyVectorTilesWrapperLayer *)layer;
+        wrapper.singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
+        wrapper.numSimultaneousFetches = config[@"numSimultaneousFetches"] && [config[@"numSimultaneousFetches"] isKindOfClass:[NSNumber class]] ? [config[@"numSimultaneousFetches"] intValue] : 0;
+        wrapper.drawPriority = config[@"drawPriority"] && [config[@"drawPriority"] isKindOfClass:[NSNumber class]] ? [config[@"drawPriority"] intValue] : 0;
+        wrapper.flipY = config[@"flipY"] ? [config[@"flipY"] boolValue] : false;
+        return;
+    }
+    if ([layer isKindOfClass:[MaplyQuadImageTilesLayer class]]) {
+        MaplyQuadImageTilesLayer * tilesLayer = (MaplyQuadImageTilesLayer *)layer;
+        tilesLayer.drawPriority = config[@"drawPriority"] && [config[@"drawPriority"] isKindOfClass:[NSNumber class]] ? [config[@"drawPriority"] intValue] : 0;
+        tilesLayer.singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
+        tilesLayer.requireElev = config[@"requireElev"] ? [config[@"requireElev"] boolValue] : false;
+        tilesLayer.waitLoad = config[@"waitLoad"] ? [config[@"waitLoad"] boolValue] : true;
+        tilesLayer.handleEdges = _useGlobeMap;
+        tilesLayer.coverPoles = _useGlobeMap;
+        tilesLayer.flipY = config[@"flipY"] ? [config[@"flipY"] boolValue] : false;
+        return;
+    }
+    if ([layer isKindOfClass:[MaplyQuadPagingLayer class]]) {
+        MaplyQuadPagingLayer * tilesLayer = (MaplyQuadPagingLayer *)layer;
+        tilesLayer.drawPriority = config[@"drawPriority"] && [config[@"drawPriority"] isKindOfClass:[NSNumber class]] ? [config[@"drawPriority"] intValue] : 0;
+        tilesLayer.singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
+        tilesLayer.flipY = config[@"flipY"] ? [config[@"flipY"] boolValue] : false;
+        return;
+    }
+}
+
 - (NSString *)createTilesLayer:(NSDictionary *)config {
     if (!config) {
         return nil;
     }
-    BOOL skipSaveOriginalLayer = FALSE;
-    MaplyViewControllerLayer * layer = nil;
     NSString * uuid = [[NSUUID UUID] UUIDString];
     if (config[@"mb"] && [config[@"mb"] isKindOfClass:[NSString class]]) {
         if (config[@"useVectorMbTiles"] && [config[@"useVectorMbTiles"] isKindOfClass:[NSString class]]) {
             if([config[@"useVectorMbTiles"] isEqualToString:@"mapbox"]) {
                 MaplyMBTileSource * tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:config[@"mb"]];
                 MapboxTilesWrapperLayer * wrapper = [[MapboxTilesWrapperLayer alloc] initWithMBTileSource: tileSource];
-                wrapper.singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
-                wrapper.flipY = false;
+                [self setupTilesLayer:wrapper FromConfig:config];
                 _layers[uuid] = wrapper;
-                skipSaveOriginalLayer = TRUE;
-                layer = [wrapper generateLayerByVc:_mapViewController];
-            } else if([config[@"useVectorMbTiles"] isEqualToString:@"maply"]) {
-                NSString * mapFile = [[NSBundle mainBundle] pathForResource:config[@"mb"] ofType:@"mbtiles"];
-                MaplyVectorTiles * vecTiles = [[MaplyVectorTiles alloc] initWithDatabase: mapFile viewC:_mapViewController];
-                layer = [[MaplyQuadPagingLayer alloc] initWithCoordSystem:[[MaplySphericalMercator alloc] initWebStandard] delegate:vecTiles];
-                ((MaplyQuadPagingLayer *)layer).numSimultaneousFetches = 8;
+                MaplyQuadPagingLayer * layer = [wrapper generateLayerByVc:_mapViewController];
+                if (layer != nil) {
+                    [_mapViewController addLayer:layer];
+                }
+                return uuid;
+            }
+            if([config[@"useVectorMbTiles"] isEqualToString:@"maply"]) {
+                NSString * mapFilePath = [[NSBundle mainBundle] pathForResource:config[@"mb"] ofType:@"mbtiles"];
+                MaplyVectorTilesWrapperLayer * wrapper = [[MaplyVectorTilesWrapperLayer alloc] initWithMapFilePath: mapFilePath];
+                [self setupTilesLayer:wrapper FromConfig:config];
+                MaplyQuadPagingLayer * layer = [wrapper generateLayerByVc:_mapViewController];
+                if (layer != nil) {
+                    [_mapViewController addLayer:layer];
+                }
+                return uuid;
             }
         }
-        if (layer == nil) {
-            MaplyMBTileSource * tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:config[@"mb"]];
-            layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
-        }
-    } else if (config[@"source"] && [config[@"source"] isKindOfClass:[NSDictionary class]]) {
+        MaplyMBTileSource * tileSource = [[MaplyMBTileSource alloc] initWithMBTiles:config[@"mb"]];
+        MaplyQuadImageTilesLayer * layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
+        [self setupTilesLayer:layer FromConfig:config];
+        _layers[uuid] = layer;
+        return uuid;
+    }
+    if (config[@"source"] && [config[@"source"] isKindOfClass:[NSDictionary class]]) {
         NSDictionary * source = config[@"source"];
         NSString * baseCacheDir = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
         NSString * tilesCacheDir = [NSString stringWithFormat:@"%@/%@/", baseCacheDir, source[@"cacheDir"] ? source[@"cacheDir"] : @"stamentiles"];
@@ -401,22 +450,9 @@
                                                      minZoom: source[@"minZoom"] && [source[@"minZoom"] isKindOfClass:[NSNumber class]] ? [source[@"minZoom"] intValue] : 0
                                                      maxZoom: source[@"maxZoom"] && [source[@"maxZoom"] isKindOfClass:[NSNumber class]] ? [source[@"maxZoom"] intValue] : 18];
         tileSource.cacheDir = tilesCacheDir;
-        layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
-    }
-    if (layer != nil) {
-        layer.drawPriority = config[@"drawPriority"] && [config[@"drawPriority"] isKindOfClass:[NSNumber class]] ? [config[@"drawPriority"] intValue] : 0;
-        if ([layer isKindOfClass:[MaplyQuadImageTilesLayer class]]) {
-            ((MaplyQuadImageTilesLayer*)layer).singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
-            ((MaplyQuadImageTilesLayer*)layer).requireElev = config[@"requireElev"] ? [config[@"requireElev"] boolValue] : false;
-            ((MaplyQuadImageTilesLayer*)layer).waitLoad = config[@"waitLoad"] ? [config[@"waitLoad"] boolValue] : true;
-            ((MaplyQuadImageTilesLayer*)layer).handleEdges = _useGlobeMap;
-            ((MaplyQuadImageTilesLayer*)layer).coverPoles = _useGlobeMap;
-        } else if ([layer isKindOfClass:[MaplyQuadPagingLayer class]]) {
-            ((MaplyQuadPagingLayer*)layer).singleLevelLoading = config[@"singleLevelLoading"] ? [config[@"singleLevelLoading"] boolValue] : false;
-        }
-        if (!skipSaveOriginalLayer) {
-            _layers[uuid] = layer;
-        }
+        MaplyQuadImageTilesLayer * layer = [[MaplyQuadImageTilesLayer alloc] initWithCoordSystem:tileSource.coordSys tileSource:tileSource];
+        [self setupTilesLayer:layer FromConfig:config];
+        _layers[uuid] = layer;
         if(_mapViewController) {
             [_mapViewController addLayer:layer];
         }
@@ -443,13 +479,20 @@
 
 - (void)removeTilesLayerByUUID:(NSString *)uuid {
     if (_layers[uuid]) {
-        // Check wrappers
+        // Check layer wrappers
         if ([_layers[uuid] isKindOfClass:[MapboxTilesWrapperLayer class]]) {
             MaplyQuadPagingLayer * layer = [((MapboxTilesWrapperLayer *)_layers[uuid]) getLatestLayer];
             if (layer != nil) {
                 [_mapViewController removeLayer: layer];
             }
             [((MapboxTilesWrapperLayer *)_layers[uuid]) destroy];
+            return;
+        } else if ([_layers[uuid] isKindOfClass:[MaplyVectorTilesWrapperLayer class]]) {
+            MaplyQuadPagingLayer * layer = [((MaplyVectorTilesWrapperLayer *)_layers[uuid]) getLatestLayer];
+            if (layer != nil) {
+                [_mapViewController removeLayer: layer];
+            }
+            [((MaplyVectorTilesWrapperLayer *)_layers[uuid]) destroy];
             return;
         }
         // Base layers
