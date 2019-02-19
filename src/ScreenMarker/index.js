@@ -5,30 +5,29 @@ import Map from '../Map';
 
 import { decorateMapComponent } from '../utils';
 
-class ScreenLabel extends React.PureComponent {
+class ScreenMarker extends React.PureComponent {
     // noinspection SpellCheckingInspection
     static propTypes = {
         map: PropTypes.instanceOf(Map),
-        text: PropTypes.string.isRequired,
         lon: PropTypes.number.isRequired,
         lat: PropTypes.number.isRequired,
         rotation: PropTypes.number,
+        size: PropTypes.shape({
+            width: PropTypes.number,
+            height: PropTypes.number,
+        }),
         offset: PropTypes.shape({
             x: PropTypes.number,
             y: PropTypes.number,
         }),
-        outlineColor: PropTypes.string,
-        outlineSize: PropTypes.number,
-        fontFamily: PropTypes.string,
-        fontSize: PropTypes.number,
         selectable: PropTypes.bool,
         color: PropTypes.string,
+        image: PropTypes.any,
     };
 
     static defaultProps = {
         selectable: false,
-        color: '#000000',
-        fontSize: 14
+        size: {width: 40, height: 40},
     };
 
     _uuid = null;
@@ -46,32 +45,29 @@ class ScreenLabel extends React.PureComponent {
         }
         const {
             map,
-            text,
+            size,
+            image,
             color,
             offset,
             lat,lon,
-            fontSize,
             rotation,
-            fontFamily,
             selectable,
-            outlineSize,
-            outlineColor,
         } = this.props;
         if (!map) {
-            return console.warn('[ScreenLabel] Cannot map ref in props!');
+            return console.warn('[ScreenMarker] Cannot map ref in props!');
         }
         this._applyingChanges = true;
         map.addScreenLabel({
-            text, lat, lon, selectable, fontSize, color,
-            ...(outlineColor ? {outlineColor} : {}),
-            ...(outlineSize ? {outlineSize} : {}),
-            ...(fontFamily ? {fontFamily} : {}),
+            lat, lon, selectable,
             ...(rotation ? {rotation} : {}),
             ...(offset ? {offset} : {}),
+            ...(image ? {image} : {}),
+            ...(color ? {color} : {}),
+            ...(size ? {size} : {}),
         }).then(uuid => {
             this._uuid = uuid;
         }).catch((error) => {
-            console.warn('Cannot create ScreenLabel on Map!', error);
+            console.warn('Cannot create ScreenMarker on Map!', error);
         }).then(() => {
             this._applyingChanges = false;
         })
@@ -93,4 +89,4 @@ class ScreenLabel extends React.PureComponent {
     }
 }
 
-export default decorateMapComponent(ScreenLabel);
+export default decorateMapComponent(ScreenMarker);
