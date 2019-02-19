@@ -24,6 +24,8 @@
 		92E65B2DC58F6BE9F5DD8F4B /* libPods-example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA6D14FA8C07740A1553FC2 /* libPods-example.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		D69869EB22184108000A7243 /* global.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = D69869C322183ACA000A7243 /* global.mbtiles */; };
+		D6986A6A2218BF82000A7243 /* geography-class_medres.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = D6986A442218BF82000A7243 /* geography-class_medres.mbtiles */; };
+		D6986A6C2218C0A0000A7243 /* satellite.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = D6986A6B2218C0A0000A7243 /* satellite.mbtiles */; };
 		D6C1968C220DB1A0004E74A4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C1968B220DB1A0004E74A4 /* Accelerate.framework */; };
 		D6C1968E220DB1B2004E74A4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C1968D220DB1B2004E74A4 /* ImageIO.framework */; };
 		D6C1970F220DC56D004E74A4 /* libRNWhirlyGlobe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C1970E220DC56D004E74A4 /* libRNWhirlyGlobe.a */; };
@@ -317,6 +319,8 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		CF73BC0F9FED16F106A343CE /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
 		D69869C322183ACA000A7243 /* global.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = global.mbtiles; sourceTree = "<group>"; };
+		D6986A442218BF82000A7243 /* geography-class_medres.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "geography-class_medres.mbtiles"; sourceTree = "<group>"; };
+		D6986A6B2218C0A0000A7243 /* satellite.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = satellite.mbtiles; sourceTree = "<group>"; };
 		D6C1968B220DB1A0004E74A4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		D6C1968D220DB1B2004E74A4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D6C1970E220DC56D004E74A4 /* libRNWhirlyGlobe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNWhirlyGlobe.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -557,6 +561,8 @@
 		D69869EA221840B6000A7243 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D6986A6B2218C0A0000A7243 /* satellite.mbtiles */,
+				D6986A442218BF82000A7243 /* geography-class_medres.mbtiles */,
 				D69869C322183ACA000A7243 /* global.mbtiles */,
 			);
 			path = Resources;
@@ -933,9 +939,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6986A6A2218BF82000A7243 /* geography-class_medres.mbtiles in Resources */,
 				D69869EB22184108000A7243 /* global.mbtiles in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				D6986A6C2218C0A0000A7243 /* satellite.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

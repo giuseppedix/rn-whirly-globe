@@ -6,6 +6,7 @@ import Map from '../Map';
 import { decorateMapComponent } from '../utils';
 
 class TilesLayer extends React.PureComponent {
+    // noinspection SpellCheckingInspection
     static propTypes = {
         map: PropTypes.instanceOf(Map),
         mb: PropTypes.string,
@@ -33,12 +34,17 @@ class TilesLayer extends React.PureComponent {
 
     _uuid = null;
 
+    _applyingChanges = false;
+
     // noinspection JSUnusedGlobalSymbols
     getUUID() {
         return this._uuid;
     }
 
-    componentDidMount() {
+    initMapElement() {
+        if (this._applyingChanges) {
+            return;
+        }
         const {
             mb,
             map,
@@ -52,6 +58,7 @@ class TilesLayer extends React.PureComponent {
         if (!map) {
             return console.warn('[TilesLayer] Cannot map ref in props!');
         }
+        this._applyingChanges = true;
         map.addTilesLayer({
             ...(source ? {source} : {mb}),
             singleLevelLoading,
@@ -63,7 +70,13 @@ class TilesLayer extends React.PureComponent {
             this._uuid = uuid;
         }).catch((error) => {
             console.warn('Cannot create TilesLayer on Map!', error);
-        });
+        }).then(() => {
+            this._applyingChanges = false;
+        })
+    }
+
+    componentDidMount() {
+        this.initMapElement();
     }
 
     componentWillUnmount() {
